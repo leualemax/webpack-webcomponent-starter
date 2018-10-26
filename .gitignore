@@ -1,0 +1,16 @@
+node_modules
+coverage
+.nyc_output
+.DS_Store
+*.log
+npm-debug.log.*
+.vscode
+.idea
+npm-debug.log*
+old
+dist
+google-credential.env
+codeship.aes
+google-credential.env
+coverage
+.awcache
