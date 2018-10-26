@@ -11,7 +11,8 @@ ruining a development env, you can seen a preview page with the custom component
 
 ### Pre Installed Libs
 [ ✅ ] Lodash
-[ ✅ ] Lodash
+
+[ ✅ ] Bootstrap
 
 ## setting the table
 
@@ -32,7 +33,7 @@ $ docker-compose up webcomponent
 ## run a single test 
 
 ```
-$ docker-compose run --rm webcomponent yarn run test
+$ docker-compose run --rm webcomponent karma start --single-run
 ```
 
 ## building

@@ -10,6 +10,6 @@ export class WebComponent extends HTMLElement{
   }
 
   public connectedCallback(){
-    this.innerHTML = `<p> Web Compoenent Says Hello! </p>`;
+    this.innerHTML = `<h1>A Simple Web Component</h1><p> build with webpack and love! </p>`;
   }
 }

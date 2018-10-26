@@ -19,7 +19,7 @@ module.exports = function (config) {
       fixWebpackSourcePaths: false
     },
     karmaTypescriptConfig: {
-      tsconfig: './tsconfig.test.json',
+      tsconfig: './tsconfig.karma.json',
 			bundlerOptions: {
 				transforms: [
 					es6transformer()
