@@ -3,6 +3,12 @@
 Implementated with Typescript and custom-elements Polyfill, using Karma for unity test, scss for styling and docker for environment. 
 Webpack is orchestrating all the magic! 🤓
 
+
+### Preview page
+ruining a development env, you can seen a preview page with the custom component element instantiated.
+`http://localhost:4200/preview`
+
+
 ## setting the table
 
 First, build the docker image
