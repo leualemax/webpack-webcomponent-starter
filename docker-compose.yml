@@ -5,6 +5,5 @@ services:
     command: yarn run dev
     volumes:
       - ./:/
-      - /node_modules
     ports:
       - "4200:4200"

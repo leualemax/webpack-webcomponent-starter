@@ -9,6 +9,10 @@ ruining a development env, you can seen a preview page with the custom component
 `http://localhost:4200/preview`
 
 
+### Pre Installed Libs
+[ ✅ ] Lodash
+[ ✅ ] Lodash
+
 ## setting the table
 
 First, build the docker image
