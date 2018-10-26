@@ -5,7 +5,7 @@ describe("Test Web Compoment", () => {
 
         it("should  print a paragraph on html", () => {
           webComponent.connectedCallback();
-          expect(webComponent.innerHTML).toEqual('<p> Web Compoenent Says Hello! </p>');
+          expect(webComponent.innerHTML).toEqual('<h1>A Simple Web Component</h1><p> build with webpack and love! </p>');
         });
     });
 });

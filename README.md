@@ -32,7 +32,7 @@ $ docker-compose up webcomponent
 ## run a single test 
 
 ```
-$ docker-compose run webcomponent yarn run test
+$ docker-compose run --rm webcomponent yarn run test
 ```
 
 ## building

@@ -1,9 +1,13 @@
 version: '3'
 services:
+  ###
+  # services
+  ###
   webcomponent:
     build: ./
     command: yarn run dev
     volumes:
-      - ./:/
+      - ./:/webcomponent
+      - ./node_modules:/webcomponent/node_modules
     ports:
       - "4200:4200"
