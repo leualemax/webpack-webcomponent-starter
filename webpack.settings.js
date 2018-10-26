@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 var WebpackEnv = require('./webpack.env.js');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+var resolve = require('path').resolve;
 // READ ENV
 require('dotenv').config();
 
@@ -18,7 +20,13 @@ var settings = {
     'define-direct': new webpack.DefinePlugin(WebpackEnv(process.env.BUILD)),
     'es6': new webpack.ProvidePlugin({
       Promise: 'es6-promise-promise'
-    })
+    }),
+    'copy': new CopyWebpackPlugin([{
+      // Copy all images from source to public
+      context: resolve("./src/preview"),
+      from: './**/*.*',
+      to: resolve("./dist/preview")
+    }]),
   },
   rules: {
     'tsx': {

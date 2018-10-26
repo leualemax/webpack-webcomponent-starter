@@ -10,7 +10,7 @@ function srcPath(subdir) {
 
 var front = function(argv) {
 
-  let plugins = ['es6', 'ignore-moment-locales', 'define'];
+  let plugins = ['copy', 'es6', 'ignore-moment-locales', 'define'];
   let rules = ['tsx', 'html', 'mustache', 'yaml', 'svg', 'scss'];
 
   if(argv.mode !== 'development'){
